@@ -1,5 +1,54 @@
- * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.article {
+  display: flex;
+  max-width: 730px;
+  height: 280px;
+  margin: 0 auto;
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__author {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__author-image {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__author-info {
+  }
+
+  &__author-name {
+  }
+
+  &__post-date {
+  }
+}
