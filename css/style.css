@@ -32,8 +32,8 @@ body {
   border-radius: 15px;
   overflow: hidden;
   background-color: white;
-  -webkit-box-shadow: 2px 2px 15px -10px #9eafc2;
-          box-shadow: 2px 2px 15px -10px #9eafc2;
+  -webkit-box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
+          box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
 }
 
 .article__image {
