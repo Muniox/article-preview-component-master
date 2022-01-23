@@ -1,12 +1,24 @@
+//colors
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$desaturated-dark-blue: hsl(214, 17%, 51%);
+$grayish-blue: hsl(212, 23%, 69%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 body {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
   font-family: 'Manrope', sans-serif;
+  background-color: $light-grayish-blue;
 }
 
 
@@ -14,8 +26,11 @@ body {
   display: flex;
   max-width: 327px;
   min-height: 512px;
-  margin: 0 auto;
   flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 2px 2px 15px -10px $grayish-blue;
 
   &__image {
     display: block;
@@ -28,17 +43,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 32px 31px 20px 31px;
   }
 
   &__title {
+    font-size: 17px;
   }
 
   &__text {
+    font-size: 13px;
+    color: $desaturated-dark-blue;
+    line-height: 22px;
+    word-spacing: 1px;
   }
 
   &__author {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -51,12 +72,24 @@ body {
   }
 
   &__author-info {
+    font-size: 13px;
   }
 
   &__author-name {
   }
 
   &__post-date {
+    color: $desaturated-dark-blue;
+  }
+
+  &__arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    background-color: $light-grayish-blue;
   }
 
   &__share {
@@ -64,7 +97,8 @@ body {
   }
 }
 
-
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 /*desktop disigne
   max-width: 730px;

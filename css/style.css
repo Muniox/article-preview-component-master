@@ -3,11 +3,20 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 body {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  gap: 20px;
   font-family: 'Manrope', sans-serif;
+  background-color: #ecf2f8;
 }
 
 .article {
@@ -16,11 +25,15 @@ body {
   display: flex;
   max-width: 327px;
   min-height: 512px;
-  margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 15px -10px #9eafc2;
+          box-shadow: 2px 2px 15px -10px #9eafc2;
 }
 
 .article__image {
@@ -41,14 +54,27 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 32px 31px 20px 31px;
+}
+
+.article__title {
+  font-size: 17px;
+}
+
+.article__text {
+  font-size: 13px;
+  color: #6d7f97;
+  line-height: 22px;
+  word-spacing: 1px;
 }
 
 .article__author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,8 +88,41 @@ body {
   height: 40px;
 }
 
+.article__author-info {
+  font-size: 13px;
+}
+
+.article__post-date {
+  color: #6d7f97;
+}
+
+.article__arrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  background-color: #ecf2f8;
+}
+
 .article__share {
   display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 /*desktop disigne
