@@ -7,9 +7,10 @@
 
 .article {
   display: flex;
-  max-width: 730px;
-  height: 280px;
+  max-width: 327px;
+  min-height: 512px;
   margin: 0 auto;
+  flex-direction: column;
 
   &__image {
     display: block;
@@ -18,6 +19,7 @@
   }
 
   &__main {
+    min-height: 312px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,4 +53,15 @@
 
   &__post-date {
   }
+
+  &__share {
+    display: none;
+  }
 }
+
+
+
+/*desktop disigne
+  max-width: 730px;
+  height: 280px;
+*/
