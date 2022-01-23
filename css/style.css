@@ -129,4 +129,20 @@ body {
   max-width: 730px;
   height: 280px;
 */
+@media screen and (min-width: 550px) {
+  .article {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 730px;
+    min-height: 280px;
+  }
+  .article__main {
+    min-height: unset;
+  }
+  .article__image {
+    max-width: 285px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

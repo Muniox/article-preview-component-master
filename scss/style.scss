@@ -104,3 +104,21 @@ body {
   max-width: 730px;
   height: 280px;
 */
+
+@media screen and (min-width: 550px ) {
+  .article {
+    flex-direction: row;
+    max-width: 730px;
+    min-height: 280px;
+    
+
+    &__main {
+      min-height: unset;
+      // min-width: 445px;
+    }
+
+    &__image{
+      max-width: 285px;
+    }
+  }
+}
