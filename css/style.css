@@ -6,6 +6,10 @@
   border: 1px solid red;
 }
 
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
 .article {
   display: -webkit-box;
   display: -ms-flexbox;
