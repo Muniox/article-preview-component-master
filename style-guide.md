@@ -1,6 +1,7 @@
 # Front-end Style Guide
 
 https://www.w3schools.com/howto/howto_js_popup.asp
+https://www.w3schools.com/howto/howto_js_media_queries.asp
 
 ## Layout
 

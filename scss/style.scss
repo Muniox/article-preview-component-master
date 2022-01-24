@@ -95,15 +95,14 @@ body {
     width: 32px;
     background-color: $light-grayish-blue;
     flex-shrink: 0;
+
+    &--active {
+      background-color: $desaturated-dark-blue;
+    }
   }
 
-  &__share-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-    gap: 20px;
+  &__arrow {
+    fill: white;
   }
 
   &__share {
@@ -124,6 +123,21 @@ body {
     color: white;
     height: 40px;
     margin: 20px 32px 20px 32px;
+    gap: 5px;
+  }
+
+  &__share-text {
+    text-transform: uppercase;
+    color: $grayish-blue;
+  }
+
+  &__share-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 175px;
+    height: 40px;
+    gap: 5px;
   }
 }
 
@@ -175,6 +189,42 @@ body {
 
     &__author-info {
       width: 100%;
+    }
+
+    &__share {
+      // visibility: hidden;
+      position: absolute;
+      bottom: 100px;
+      left: unset;
+      right: -10%;
+      background-color: $very-dark-grayish-blue;
+      height: 55px;
+      width: 248px;
+      border-radius: 15px;
+    }
+
+    &__share-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      height: 40px;
+      margin: 20px 32px 20px 32px;
+      gap: 5px;
+    }
+
+    &__share-text {
+      text-transform: uppercase;
+      color: $grayish-blue;
+    }
+
+    &__share-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 175px;
+      height: 40px;
+      gap: 5px;
     }
   }
 }
