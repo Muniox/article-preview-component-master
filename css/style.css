@@ -41,6 +41,7 @@ body {
   width: 100%;
   height: auto;
   border-radius: 15px 15px 0 0;
+  max-height: 200px;
 }
 
 .article__main {
@@ -62,6 +63,7 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #48556a;
+  margin-bottom: 10px;
 }
 
 .article__text {
@@ -69,6 +71,7 @@ body {
   color: #6d7f97;
   line-height: 20px;
   word-spacing: 1px;
+  margin-bottom: 30px;
 }
 
 .article__author {
@@ -121,36 +124,41 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70%;
+  width: 100%;
   height: 40px;
+  gap: 20px;
 }
 
 .article__share {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #48556a;
+  height: 80px;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.article__share-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   color: white;
-  background-color: #48556a;
-  height: 11%;
-  width: 100%;
-  border-radius: 0px 0px 15px 15px;
-  padding: 20px 31px 20px 31px;
+  height: 40px;
+  margin: 20px 32px 20px 32px;
 }
 
 .attribution {
@@ -177,6 +185,7 @@ body {
   }
   .article__image {
     max-width: 285px;
+    max-height: unset;
     border-radius: 15px 0px 0px 15px;
   }
   .article__main {
