@@ -4,7 +4,6 @@ $desaturated-dark-blue: hsl(214, 17%, 51%);
 $grayish-blue: hsl(212, 23%, 69%);
 $light-grayish-blue: hsl(210, 46%, 95%);
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,21 +20,22 @@ body {
   background-color: $light-grayish-blue;
 }
 
-
 .article {
   display: flex;
   max-width: 327px;
   min-height: 512px;
   flex-direction: column;
   border-radius: 15px;
-  overflow: hidden;
+  // overflow-y: hidden;
   background-color: white;
   box-shadow: 4px 0px 10px hsla(212, 23%, 69%, 0.2);
+  position: relative;
 
   &__image {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 15px 15px 0 0;
   }
 
   &__main {
@@ -47,7 +47,9 @@ body {
   }
 
   &__title {
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $very-dark-grayish-blue;
   }
 
   &__text {
@@ -90,35 +92,81 @@ body {
     height: 32px;
     width: 32px;
     background-color: $light-grayish-blue;
+    flex-shrink: 0;
+  }
+
+  &__share-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 40px;
   }
 
   &__share {
+    display: flex;
     display: none;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: $very-dark-grayish-blue;
+    height: 11%;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    padding: 20px 31px 20px 31px;
   }
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 /*desktop disigne
   max-width: 730px;
   height: 280px;
 */
 
-@media screen and (min-width: 550px ) {
+@media screen and (min-width: 550px) {
   .article {
     flex-direction: row;
     max-width: 730px;
     min-height: 280px;
-    
+
+    &__image {
+      max-width: 285px;
+      border-radius: 15px 0px 0px 15px;
+    }
 
     &__main {
       min-height: unset;
+      padding: 34px 40px 32px 40px;
       // min-width: 445px;
     }
 
-    &__image{
-      max-width: 285px;
+    &__title {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    &__text {
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    &__author {
+      justify-content: space-between;
+      gap: 17px;
+    }
+
+    &__author-info {
+      width: 100%;
     }
   }
 }

@@ -30,16 +30,17 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 15px;
-  overflow: hidden;
   background-color: white;
   -webkit-box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
           box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
+  position: relative;
 }
 
 .article__image {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 15px 15px 0 0;
 }
 
 .article__main {
@@ -58,7 +59,9 @@ body {
 }
 
 .article__title {
-  font-size: 17px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #48556a;
 }
 
 .article__text {
@@ -110,10 +113,44 @@ body {
   height: 32px;
   width: 32px;
   background-color: #ecf2f8;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.article__share-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 40px;
 }
 
 .article__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  background-color: #48556a;
+  height: 11%;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  padding: 20px 31px 20px 31px;
 }
 
 .attribution {
@@ -138,11 +175,30 @@ body {
     max-width: 730px;
     min-height: 280px;
   }
-  .article__main {
-    min-height: unset;
-  }
   .article__image {
     max-width: 285px;
+    border-radius: 15px 0px 0px 15px;
+  }
+  .article__main {
+    min-height: unset;
+    padding: 34px 40px 32px 40px;
+  }
+  .article__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .article__text {
+    font-size: 13px;
+    margin-bottom: 22px;
+  }
+  .article__author {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 17px;
+  }
+  .article__author-info {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
