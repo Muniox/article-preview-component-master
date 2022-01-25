@@ -118,6 +118,8 @@ body {
   background-color: #ecf2f8;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  z-index: 100;
+  cursor: pointer;
 }
 
 .article__arrow-container--active {
@@ -129,7 +131,6 @@ body {
 }
 
 .article__share {
-  visibility: hidden;
   position: absolute;
   bottom: 0px;
   left: 0px;

@@ -95,6 +95,8 @@ body {
     width: 32px;
     background-color: $light-grayish-blue;
     flex-shrink: 0;
+    z-index: 100;
+    cursor: pointer;
 
     &--active {
       background-color: $desaturated-dark-blue;
@@ -106,7 +108,7 @@ body {
   }
 
   &__share {
-    visibility: hidden;
+    // visibility: hidden;
     position: absolute;
     bottom: 0px;
     left: 0px;
