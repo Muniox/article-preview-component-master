@@ -131,6 +131,7 @@ body {
 }
 
 .article__share {
+  visibility: hidden;
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -138,6 +139,10 @@ body {
   height: 80px;
   width: 100%;
   border-radius: 0px 0px 15px 15px;
+}
+
+.article__share--active {
+  visibility: visible;
 }
 
 .article__share-wrapper {
@@ -160,6 +165,8 @@ body {
 .article__share-text {
   text-transform: uppercase;
   color: #9eafc2;
+  font-size: 12px;
+  letter-spacing: 4px;
 }
 
 .attribution {
@@ -221,12 +228,23 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    bottom: 100px;
+    bottom: 99px;
     left: unset;
-    right: -64px;
+    right: -67px;
     height: 55px;
     width: 248px;
     border-radius: 15px;
+  }
+  .article__share::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #48556a transparent transparent transparent;
+    z-index: 20;
   }
 }
 /*# sourceMappingURL=style.css.map */

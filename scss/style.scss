@@ -108,7 +108,7 @@ body {
   }
 
   &__share {
-    // visibility: hidden;
+    visibility: hidden;
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -116,6 +116,10 @@ body {
     height: 80px;
     width: 100%;
     border-radius: 0px 0px 15px 15px;
+
+    &--active {
+      visibility: visible;
+    }
   }
 
   &__share-wrapper {
@@ -132,6 +136,8 @@ body {
   &__share-text {
     text-transform: uppercase;
     color: $grayish-blue;
+    font-size: 12px;
+    letter-spacing: 4px;
   }
 }
 
@@ -191,12 +197,24 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      bottom: 100px;
+      bottom: 99px;
       left: unset;
-      right: -64px;
+      right: -67px;
       height: 55px;
       width: 248px;
       border-radius: 15px;
+    }
+
+    &__share::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -15px;
+      border-width: 15px;
+      border-style: solid;
+      border-color: $very-dark-grayish-blue transparent transparent transparent;
+      z-index: 20;
     }
   }
 }
