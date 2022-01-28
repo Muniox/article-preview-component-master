@@ -34,6 +34,7 @@ body {
   -webkit-box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
           box-shadow: 4px 0px 10px rgba(158, 175, 194, 0.2);
   position: relative;
+  min-width: 280px;
 }
 
 .article__image {
@@ -128,6 +129,8 @@ body {
 
 .article__arrow {
   fill: white;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
 }
 
 .article__share {
@@ -143,6 +146,8 @@ body {
 
 .article__share--active {
   visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .article__share-wrapper {
@@ -176,6 +181,24 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*desktop disigne

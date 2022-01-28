@@ -29,6 +29,7 @@ body {
   background-color: white;
   box-shadow: 4px 0px 10px hsla(212, 23%, 69%, 0.2);
   position: relative;
+  min-width: 280px;
 
   &__image {
     display: block;
@@ -105,6 +106,7 @@ body {
 
   &__arrow {
     fill: white;
+    transition: 0.5s ease-out;
   }
 
   &__share {
@@ -119,6 +121,7 @@ body {
 
     &--active {
       visibility: visible;
+      animation: fadeIn 0.5s;
     }
   }
 
@@ -147,6 +150,15 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*desktop disigne
