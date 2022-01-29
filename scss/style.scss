@@ -98,6 +98,7 @@ body {
     flex-shrink: 0;
     z-index: 100;
     cursor: pointer;
+    border: none;
 
     &--active {
       background-color: $desaturated-dark-blue;
@@ -230,3 +231,4 @@ body {
     }
   }
 }
+
