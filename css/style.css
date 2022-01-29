@@ -175,6 +175,21 @@ body {
   letter-spacing: 4px;
 }
 
+.article__social-media {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  vertical-align: middle;
+}
+
+.article__social-media:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

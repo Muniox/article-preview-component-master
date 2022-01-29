@@ -143,6 +143,17 @@ body {
     font-size: 12px;
     letter-spacing: 4px;
   }
+
+  &__social-media {
+    transform: scale(1);
+    transition: 0.2s ease-out;
+    vertical-align: middle;
+  }
+
+  &__social-media:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in;
+  }
 }
 
 .attribution {
