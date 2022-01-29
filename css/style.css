@@ -99,6 +99,11 @@ body {
   font-size: 13px;
 }
 
+.article__author-name {
+  font-weight: 700;
+  color: #48556a;
+}
+
 .article__post-date {
   color: #6d7f97;
 }
